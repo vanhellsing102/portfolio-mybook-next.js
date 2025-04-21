@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "../styles/Blob.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,10 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-radial from-[#4e44b1] via-[#312c64] to-[#1c1c31] relative md:mt-5 md:mx-10 mx-5 mt-4`}
       >
+          <div className="blob absolute bg-radial md:w-[400px] md:h-[500px] w-[200px] h-[200px] from-[#8e2de2] via-[#4a00e0] to-[#2a0845] rounded-full top-28 left-1/3 blur-2xl mix-blend-lighten z-0">
+          </div>
         {children}
       </body>
     </html>
   );
 }
+// filter blur-3xl opacity-30 animate-pulse   z-0
