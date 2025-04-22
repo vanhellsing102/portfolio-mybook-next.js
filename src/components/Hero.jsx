@@ -11,10 +11,12 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram, FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
 import hero from "../../public/images/murad.jpg";
 import Image from "next/image";
+import earth from "../../public/images/earth (1).png";
+import moon from "../../public/images/moon.png";
 
 const Hero = () => {
     return (
-        <div id="home" className='flex justify-center md:flex-row flex-col items-center min-h-[calc(100vh-64px)] gap-10'>
+        <div id="home" className='flex justify-center overflow-hidden md:flex-row flex-col items-center min-h-[calc(100vh-64px)] md:gap-5 gap-20'>
             {/* describe section */}
             <div className='md:w-1/2 flex items-center flex-col z-10'>
                 <p className="text-xl border border-slate-300/10 bg-white/10 px-2 rounded-lg text-slate-200">Hi, there</p>
@@ -65,25 +67,38 @@ const Hero = () => {
                         <FaSquareInstagram className="hover:text-fuchsia-600 duration-200 transition-all"></FaSquareInstagram>
                     </a>
                 </div>
-                <motion.div 
+                {/* <motion.div 
                     animate={{x: 0, y: [0, -20, 0] }}
                     transition={{ repeat: Infinity, repeatType: "loop", duration: 0.5, ease: "easeInOut",}}>
                     <IoMdArrowDown className="text-2xl"></IoMdArrowDown>
-                </motion.div>
+                </motion.div> */}
             </div>
 
             {/* image section with solar system */}
             <div className='md:w-1/2 flex items-center justify-center'>
                 <div className="relative">
-                    <Image className="md:h-[300px] md:w-[300px] h-[150px] w-[150px] border-4 border-[#FF4500] shadow-[0_10px_40px_rgba(255,69,0,1),0_-10px_40px_rgba(255,69,0,1)] rounded-full z-0" src={hero} alt="" />
-                    <div className="mercury border-2 border-slate-500 rounded-full absolute -inset-6 md:-inset-10">
+                    <Image className="md:h-[250px] md:w-[250px] h-[150px] w-[150px] border-4 border-[#FF4500] shadow-[0_10px_40px_rgba(255,69,0,1),0_-10px_40px_rgba(255,69,0,1)] rounded-full z-0" src={hero} alt="" />
+                    <div className="mercury border-2 border-slate-500 rounded-full absolute -inset-4 md:-inset-8">
                         <div className="relative">
-                            <div className="md:w-[35px] md:h-[35px] w-[20px] h-[20px] bg-[#b1b1b1] absolute rounded-full md:top-[74px] top-[42px] md:left-2 drop-shadow-2xl"></div>
+                            <div className="md:w-[30px] md:h-[30px] w-[20px] h-[20px] bg-[#b1b1b1] absolute rounded-full md:top-[60px] top-[38px] md:left-2 drop-shadow-2xl"></div>
                         </div>
                     </div>
-                    <div className="earth border-2 border-slate-500 rounded-full absolute -inset-16 md:-inset-[100px]">
+                    <div className="earth border-2 border-slate-500 rounded-full absolute -inset-12 md:-inset-[90px]">
                         <div className="relative">
-                            <Image className="md:w-[50px] md:h-[50px] w-[35px] h-[35px] absolute rounded-full md:top-[76px] md:left-6 top-[54px] border border-slate-400" src={hero} alt="" />
+                            <div className="md:top-[47px] md:left-6 top-[54px] absolute">
+                                <Image className="md:w-[55px] md:h-[55px] w-[35px] h-[35px] rounded-full relative" src={earth} alt="" />
+                                <div className="moon absolute md:border-2 border border-slate-500 md:-inset-3 -inset-[4px] rounded-full">
+                                    <div className="relative w-full h-full md:bottom-[12px] bottom-[8px]">
+                                        <Image className="absolute md:w-[45px] md:h-[30px] w-[30px] h-[20px]" src={moon} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-2 border-slate-500 mars rounded-full absolute -inset-20 md:-inset-[155px]">
+                        <div className="relative">
+                            <div className="absolute md:w-[45px] md:h-[45px] w-[25px] md:top-16 md:left-[54px] top-10 left-6 h-[25px] bg-[#F79227] rounded-full shadow-[0_0_30px_rgba(247,146,39,0.8)]">
+                            </div>
                         </div>
                     </div>
                 </div>

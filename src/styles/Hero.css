@@ -35,7 +35,13 @@
     animation: mercury 20s infinite linear;
 }
 .earth{
-    animation: earth 28s infinite linear;
+    animation: earth 26s infinite linear;
+}
+.moon{
+    animation: earth 7s infinite linear;
+}
+.mars{
+    animation: earth 30s infinite linear;
 }
 @keyframes mercury{
     0%{
