@@ -1,0 +1,79 @@
+.nameColor{
+    animation: nameColorAnimation 10s ease infinite;
+}
+@keyframes nameColorAnimation{
+    0%{
+        background-color: #FFFFFF;
+    }
+    10%{
+        background-color: #FFEB3B;
+    }
+    25%{
+        background-color: #FF4081;
+    }
+    40%{
+        background-color: #00BCD4;
+    }
+    55%{
+        background-color: #00FF00;
+    }
+    70%{
+        background-color: #FF5722;
+    }
+    80%{
+        background-color: #2196F3;
+    }
+    90%{
+        background-color: #E91E63;
+    }
+    100%{
+        background-color: #FF9800;
+    }
+}
+
+.mercury{
+    animation: mercury 20s infinite linear;
+}
+.earth{
+    animation: earth 28s infinite linear;
+}
+@keyframes mercury{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes earth{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

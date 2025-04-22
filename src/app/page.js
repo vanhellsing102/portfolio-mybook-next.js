@@ -1,10 +1,11 @@
+import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import React from 'react';
 
 const MainPage = () => {
   return (
-    <div>
+    <div className='space-y-12'>
       <Navbar></Navbar>
+      <Hero></Hero>
     </div>
   );
 };
