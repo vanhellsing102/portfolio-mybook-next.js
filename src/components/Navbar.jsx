@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between text-[#F8F8F8]'>
             <a className='text-4xl font-semibold' href={'#'}>MyBook</a>
-            <nav className='fixed justify-end w-full md:right-10 right-7 md:flex hidden'>
+            <nav className='fixed justify-end w-full md:right-10 right-7 md:flex hidden z-10'>
                 <ul className='flex items-center backdrop-blur-xl gap-5 py-3 px-5 text-[15px] bg-white/10 border border-white/30 rounded-lg shadow-lg'>
                     {
                         navData.map(data =>

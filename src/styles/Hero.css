@@ -32,38 +32,18 @@
 }
 
 .mercury{
-    animation: mercury 20s infinite linear;
+    animation: solarSystem 17s infinite linear;
 }
 .earth{
-    animation: earth 26s infinite linear;
+    animation: solarSystem 25s infinite linear;
 }
 .moon{
-    animation: earth 7s infinite linear;
+    animation: solarSystem 5s infinite linear;
 }
 .mars{
-    animation: earth 30s infinite linear;
+    animation: solarSystem 25s infinite linear;
 }
-@keyframes mercury{
-    0%{
-        transform: rotate(0deg);
-    }
-    20%{
-        transform: rotate(72deg);
-    }
-    40%{
-        transform: rotate(144deg);
-    }
-    60%{
-        transform: rotate(216deg);
-    }
-    80%{
-        transform: rotate(288deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-@keyframes earth{
+@keyframes solarSystem{
     0%{
         transform: rotate(0deg);
     }
