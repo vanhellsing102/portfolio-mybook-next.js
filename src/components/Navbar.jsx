@@ -28,14 +28,13 @@ const Navbar = () => {
             </nav>
 
             {/* responsive */}
-            <div className='md:hidden block relative w-full'>
-                <div className='flex w-full justify-end'>
-                    <HiOutlineMenuAlt2 onClick={() =>setOpenMenu(!openMenu)} className='text-2xl text-[#00F5A0]'></HiOutlineMenuAlt2>
-                </div>
-                <nav className={`absolute top-8 -right-72 w-full ${openMenu ? "right-0" : ""} transition-all duration-700`}>
+            <div className='md:hidden block w-full'>
+                <div className='flex w-full justify-end relative'>
+                    <HiOutlineMenuAlt2 onClick={() =>setOpenMenu(!openMenu)} className='text-2xl z-10 fixed text-[#00F5A0]'></HiOutlineMenuAlt2>
+                    <nav className={`absolute w-full ${openMenu ? "right-0" : ""} transition-all duration-700`}>
                     {
                         openMenu &&
-                        <ul className={`p-3 flex flex-col items-center text-[15px] bg-white/10 border border-white/30 rounded-lg shadow-lg`}>
+                        <ul className={`p-3 flex flex-col left-0 top-[60px] items-center text-[15px] bg-slate-500 border border-white/30 fixed w-full shadow-lg z-10`}>
                         {
                             navData.map(data =>
                                 <li className='font-bold text-slate-200' key={data?.id}>
@@ -49,6 +48,8 @@ const Navbar = () => {
                         </ul>
                     }
                 </nav>
+                </div>
+                
             </div>
         </div>
     );

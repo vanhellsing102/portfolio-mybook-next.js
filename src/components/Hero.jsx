@@ -16,9 +16,9 @@ import moon from "../../public/images/moon.png";
 
 const Hero = () => {
     return (
-        <div id="home" className='flex justify-center overflow-hidden md:flex-row flex-col items-center min-h-[calc(100vh-64px)] md:gap-5 gap-20'>
+        <div id="home" className='flex justify-center overflow-hidden md:flex-row flex-col items-center min-h-screen md:gap-5 gap-20'>
             {/* describe section */}
-            <div className='md:w-1/2 flex items-center flex-col z-10'>
+            <div className='md:w-1/2 flex items-center flex-col'>
                 <p className="text-xl border border-slate-300/10 bg-white/10 px-2 rounded-lg text-slate-200">Hi, there</p>
                 <h2 className="text-[#F8F8F8] md:text-[58px] text-5xl font-semibold">I'm <span className="capitalize bg-clip-text text-transparent nameColor">{heroData?.name}!</span></h2>
                 <h3 className="text-4xl font-semibold">
