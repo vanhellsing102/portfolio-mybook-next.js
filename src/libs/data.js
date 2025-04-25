@@ -26,16 +26,21 @@ export const navData = [
     },
     {
         id: 6,
+        title: "Stats",
+        link: "#stats"
+    },
+    {
+        id: 7,
         title: "Experience",
         link: "#experience"
     },
     {
-        id: 7,
+        id: 8,
         title: "Education",
         link: "#education"
     },
     {
-        id: 8,
+        id: 9,
         title: "Contact",
         link: "#contact"
     }
