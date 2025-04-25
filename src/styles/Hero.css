@@ -41,7 +41,7 @@
     animation: solarSystem 5s infinite linear;
 }
 .mars{
-    animation: solarSystem 25s infinite linear;
+    animation: solarSystem 20s infinite linear;
 }
 @keyframes solarSystem{
     0%{

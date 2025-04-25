@@ -11,7 +11,7 @@ const Skills = () => {
                 {
                     skills.map(item =>
                         <div className="flex flex-col bg-white/10 rounded-lg border cursor-pointer hover:scale-[107%] hover:shadow-md shadow-fuchsia-500 border-white/30 p-1 items-center transition-all duration-200" key={item?.id}>
-                            <Image width={80} height={100} src={item?.image} alt={item?.name}></Image>
+                            <Image width={80} height={100} style={{height: "auto"}} src={item?.image} alt={item?.name}></Image>
                             <p className="text-slate-200 capitalize">{item.name}</p>
                         </div>
                     )
