@@ -1,5 +1,4 @@
 import { LuGraduationCap } from "react-icons/lu";
-import { education } from "@/libs/data";
 
 const Education = () => {
     return (

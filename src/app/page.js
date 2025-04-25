@@ -1,6 +1,7 @@
 import About from '@/components/About';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
+import Github from '@/components/Github';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
@@ -14,6 +15,7 @@ const MainPage = () => {
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
+      <Github></Github>
       <Experience></Experience>
       <Education></Education>
     </div>

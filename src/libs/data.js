@@ -21,16 +21,21 @@ export const navData = [
     },
     {
         id: 5,
+        title: "Github",
+        link: "#github"
+    },
+    {
+        id: 6,
         title: "Experience",
         link: "#experience"
     },
     {
-        id: 6,
+        id: 7,
         title: "Education",
         link: "#education"
     },
     {
-        id: 7,
+        id: 8,
         title: "Contact",
         link: "#contact"
     }
@@ -218,28 +223,4 @@ export const experience = [
     "Worked in a team of 3–4 developers to build production-ready web applications using the MERN Stack.",
     "Practiced pair programming and active code discussion sessions to solve bugs and optimize performance.",
     "Participated in weekly code reviews and Git workflow (branching, pull requests, merges)."
-]
-
-export const education = [
-    {
-        id: 1,
-        degree: "Computer Science and Technology (CST)",
-        year: "2021-2025",
-        gpa: "3.95 out of 4.00",
-        organization: "Thakurgaon Polytechnic Institute, Thakurgaon"
-    },
-    {
-        id: 2,
-        degree: "Secondary School Certificate (SSC)",
-        year: "2016-2021",
-        gpa: "5.00 out of 5.00",
-        organization: "Boda Govt Pilot Model School and College",
-    },
-    {
-        id: 3,
-        degree: "Primary School Certificate (PSC)",
-        year: "2011-2016",
-        gpa: "4.83 out of 5.00",
-        organization: "Sipaipara Sikhon School",
-    }
 ]
