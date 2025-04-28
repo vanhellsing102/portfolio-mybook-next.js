@@ -7,7 +7,7 @@ import { LuCircleArrowOutUpRight } from "react-icons/lu";
 
 const Projects = () => {
     return (
-        <div id="projects" className='md:mx-14 mx-4'>
+        <div id="projects" className='md:mx-14 mx-3'>
             <div className="flex justify-center">
                 <h2 className='text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600'>My Projects</h2>
             </div>

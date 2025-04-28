@@ -12,7 +12,7 @@ import Stats from '@/components/Stats';
 
 const MainPage = () => {
   return (
-    <div className='space-y-20'>
+    <div className='space-y-16'>
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>

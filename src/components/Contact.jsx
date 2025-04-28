@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="flex justify-center ">
                 <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">Education</h2>
             </div>
-            <div className="bg-white/10 border border-white/30 rounded-xl justify-between items-center flex md:flex-row flex-col p-5 gap-6">
+            <div className="bg-white/10 border border-white/30 rounded-xl justify-between items-center flex md:flex-row flex-col md:p-5 p-1 gap-6">
                 <div className="md:w-1/2 mx-2 md:px-0">
                     <h2 className="text-4xl font-semibold text-[#00F5A0]">To connect with me</h2>
                     <p className="text-lg text-slate-200">Whether you want to collaborate, hire me, or just have a quick chat, I’m always open! Fill out the form or reach out directly.</p>
@@ -69,7 +69,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <div className="md:w-1/2">
+                <div className="md:w-1/2 w-full">
                     <form onSubmit={handleSendMessage} className="space-y-3">
                         <div>
                             <label className="block text-lg font-medium text-slate-200">Name:</label>
