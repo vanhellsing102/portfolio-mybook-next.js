@@ -2,6 +2,7 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
+import Footer from '@/components/Footer';
 import Github from '@/components/Github';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -22,6 +23,7 @@ const MainPage = () => {
       <Experience></Experience>
       <Education></Education>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };

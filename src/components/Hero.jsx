@@ -15,9 +15,7 @@ import earth from "../../public/images/earth (1).png";
 import moon from "../../public/images/moon.png";
 
 const Hero = () => {
-    const handleContact = () =>{
-        console.log("contack")
-    }
+    
     return (
         <div id="home" className='flex justify-center overflow-hidden md:flex-row flex-col items-center min-h-screen md:gap-5 gap-20'>
             {/* describe section */}
@@ -44,14 +42,14 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="mt-3 flex items-center gap-3">
-                    <button className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
+                    <a className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
                         <IoDocumentTextOutline></IoDocumentTextOutline>
                         <span>Resume</span>
-                    </button>
-                    <button onClick={handleContact} className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
+                    </a>
+                    <a href="#contact" className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
                         <MdOutlineMailOutline></MdOutlineMailOutline>
                         <span>Contact Me</span>
-                    </button>
+                    </a>
                 </div>
                 <div className="flex items-center gap-2 mt-3 text-2xl text-slate-200">
                     <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.facebook} target="_blank">

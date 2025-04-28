@@ -1,5 +1,7 @@
 "use client";
 import { heroData } from "@/libs/data";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
@@ -14,15 +16,23 @@ const Contact = () => {
         const name = form.get("name");
         const email = form.get("email");
         const message = form.get("message");
-        console.log(name, email, message)
+        const newMessage = {
+            name, email, message
+        }
+        axios.post('/api/contact', newMessage)
+        .then(res =>{
+            console.log(res.data);
+            toast.success(res.data?.message);
+        })
+        // console.log(name, email, message);
     }
     return (
-        <div id='contact' className='md:mx-28 mx-4'>
+        <div id='contact' className='md:mx-28'>
             <div className="flex justify-center ">
                 <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">Education</h2>
             </div>
             <div className="bg-white/10 border border-white/30 rounded-xl justify-between items-center flex md:flex-row flex-col p-5 gap-6">
-                <div className="md:w-1/2">
+                <div className="md:w-1/2 mx-2 md:px-0">
                     <h2 className="text-4xl font-semibold text-[#00F5A0]">To connect with me</h2>
                     <p className="text-lg text-slate-200">Whether you want to collaborate, hire me, or just have a quick chat, I’m always open! Fill out the form or reach out directly.</p>
                     <div className="flex flex-col gap-1 mt-3">
@@ -75,6 +85,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };
