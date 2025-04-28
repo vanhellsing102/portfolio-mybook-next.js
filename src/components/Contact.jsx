@@ -17,11 +17,13 @@ const Contact = () => {
         const email = form.get("email");
         const message = form.get("message");
         const newMessage = {
-            name, email, message
+            name, 
+            email,
+            message
         }
         axios.post('/api/contact', newMessage)
         .then(res =>{
-            console.log(res.data);
+            console.log(res.data.message);
             toast.success(res.data?.message);
         })
         // console.log(name, email, message);
