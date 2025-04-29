@@ -205,13 +205,13 @@ export const projects = [
     },
     {
         id: 3,
-        projectName: "Loop Talk",
-        image: "/images/murad.jpg",
-        details: "A MERN stack-based real-time chat application with instant messaging, user authentication, and online status features.",
-        githubLink: "https://github.com/vanhellsing102/loop-talk",
-        previewLink: "https://www.npmjs.com/package/react-parallax-tilt",
+        projectName: "Team P",
+        image: "/images/projects/teamP.png",
+        details: "A collaborative portfolio showcasing our team's skills, projects, and achievements—highlighting our expertise in full-stack development, UI/UX design, and creative problem-solving.",
+        githubLink: "https://github.com/vanhellsing102/team-portfolio-with-next.js",
+        previewLink: "https://murad-nifad.vercel.app",
         features: [
-            "html", "css", "tailwind", "js", "react js", "node js", "express js", "mongoose", "socket.io"
+            "html", "css", "tailwind", "ts", "react js", "next js"
         ]
     },
     {
