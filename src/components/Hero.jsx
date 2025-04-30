@@ -17,7 +17,7 @@ import moon from "../../public/images/moon.png";
 const Hero = () => {
     
     return (
-        <div id="home" className='flex justify-center md:flex-row flex-col items-center md:min-h-screen h-full md:gap-5 gap-20'>
+        <div id="home" className='flex justify-center md:overflow-hidden md:flex-row flex-col items-center md:min-h-screen h-full md:gap-5 gap-20'>
             {/* describe section */}
             <div className='md:w-1/2 flex items-center flex-col'>
                 <p className="text-xl border border-slate-300/10 bg-white/10 px-2 rounded-lg text-slate-200">Hi, there</p>
