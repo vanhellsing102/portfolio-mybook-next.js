@@ -76,17 +76,17 @@ const Hero = () => {
             </div>
 
             {/* image section with solar system */}
-            <div className='md:w-1/2 flex items-center justify-center'>
+            <div className='md:w-1/2 flex items-center justify-center rounded-full'>
                 <div className="relative">
-                    <Image className="md:h-[250px] md:w-[250px] h-[150px] w-[150px] border-4 border-[#FF4500] shadow-[0_10px_40px_rgba(255,69,0,1),0_-10px_40px_rgba(255,69,0,1)] rounded-full z-0" src={hero} alt="" />
+                    <Image className="md:h-[250px] md:w-[250px] h-[100px] w-[100px] border-4 border-[#FF4500] shadow-[0_10px_40px_rgba(255,69,0,1),0_-10px_40px_rgba(255,69,0,1)] rounded-full z-0" src={hero} alt="" />
                     <div className="mercury border-2 border-slate-500 rounded-full absolute -inset-4 md:-inset-8">
                         <div className="relative">
-                            <div className="md:w-[30px] md:h-[30px] w-[20px] h-[20px] bg-[#b1b1b1] absolute rounded-full md:top-[60px] top-[38px] md:left-2 drop-shadow-2xl"></div>
+                            <div className="md:w-[30px] md:h-[30px] w-[17px] h-[17px] bg-[#b1b1b1] absolute rounded-full md:top-[60px] top-[24px] md:left-2 drop-shadow-2xl"></div>
                         </div>
                     </div>
                     <div className="earth border-2 border-slate-500 rounded-full absolute -inset-12 md:-inset-[90px]">
                         <div className="relative">
-                            <div className="md:top-[47px] md:left-6 top-[54px] absolute">
+                            <div className="md:top-[47px] md:left-6 top-[25px] absolute">
                                 <Image className="md:w-[55px] md:h-[55px] w-[35px] h-[35px] rounded-full relative" src={earth} alt="" />
                                 <div className="moon absolute md:border-2 border border-slate-500 md:-inset-3 -inset-[4px] rounded-full">
                                     <div className="relative w-full h-full md:bottom-[12px] bottom-[8px]">
@@ -98,7 +98,7 @@ const Hero = () => {
                     </div>
                     <div className="border-2 border-slate-500 mars rounded-full absolute -inset-20 md:-inset-[155px]">
                         <div className="relative">
-                            <div className="absolute md:w-[45px] md:h-[45px] w-[25px] md:top-16 md:left-[54px] top-10 left-6 h-[25px] bg-[#F79227] rounded-full shadow-[0_0_30px_rgba(247,146,39,0.8)]">
+                            <div className="absolute md:w-[45px] md:h-[45px] w-[25px] md:top-16 md:left-[54px] top-6 left-6 h-[25px] bg-[#F79227] rounded-full shadow-[0_0_30px_rgba(247,146,39,0.8)]">
                             </div>
                         </div>
                     </div>
