@@ -24,7 +24,7 @@ const Hero = () => {
                 <h2 className="text-[#F8F8F8] md:text-[58px] text-5xl font-semibold">I'm <span className="capitalize bg-clip-text text-transparent nameColor">{heroData?.name}!</span></h2>
                 <h3 className="text-4xl font-semibold">
                     <span className="text-slate-300">I'm a</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-fuchsia-500 to-red-600">
-                        <Typewriter words={['MERN-Stack Devoloper', "CSE Student", 'Learner', 'Traveller', 'Marketing Expert', 'Review Provider']} loop={true} cursor cursorStyle='_' typeSpeed={100} deleteSpeed={50} delaySpeed={1000}/>
+                        <Typewriter words={['MERN-Stack Developer', "CSE Student", 'Learner', 'Traveller', 'Marketing Expert', 'Review Provider']} loop={true} cursor cursorStyle='_' typeSpeed={100} deleteSpeed={50} delaySpeed={1000}/>
                     </span>
                 </h3>
                 <div className="flex flex-col gap-1 mt-3">
