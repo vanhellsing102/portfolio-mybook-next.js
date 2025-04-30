@@ -31,7 +31,7 @@ const Contact = () => {
     return (
         <div id='contact' className='md:mx-28'>
             <div className="flex justify-center ">
-                <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">Education</h2>
+                <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">Contact Me</h2>
             </div>
             <div className="bg-white/10 border border-white/30 rounded-xl justify-between items-center flex md:flex-row flex-col md:p-5 p-1 gap-6">
                 <div className="md:w-1/2 mx-2 md:px-0">
