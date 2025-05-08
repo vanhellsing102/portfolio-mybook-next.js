@@ -119,7 +119,7 @@ export const skills = [
     },
     {
         id: 12,
-        name: "tailwing",
+        name: "mongoose",
         image: "/images/skills/mongoose.png"
     },
     {
@@ -201,6 +201,17 @@ export const projects = [
         previewLink: "https://bistro-boss-8dc98.web.app",
         features: [
             "html", "css", "js", "tailwind", "react js", "firebase", "axios", "tanstack query", "express js", "node js", "mongodb"
+        ]
+    },
+    {
+        id: 12,
+        projectName: "Job Helper",
+        image: "/images/projects/ai.png",
+        details: "A smart AI assistant built for Bangladeshi job preparation, where you get short and reliable answers only to job-related questions.",
+        githubLink: "https://github.com/vanhellsing102/portfolio-mybook-next.js",
+        previewLink: "https://job-helper-beta.vercel.app",
+        features: [
+            "html", "css", "tailwind", "ts", "react js", "next js"
         ]
     },
     {
