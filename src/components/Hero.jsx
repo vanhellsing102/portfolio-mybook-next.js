@@ -42,7 +42,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="mt-3 flex items-center gap-3">
-                    <a href="f:\Md_Murad.pdf" className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
+                    <a href="https://drive.google.com/uc?export=download&id=1N93LcoDkGobmGGQb05QlTUJd0fUAVasH" target="_blank" className="bg-[#00F5A0] border border-slate-200 px-4 py-1 rounded-lg text-[17px] flex items-center gap-3 cursor-pointer text-slate-800 font-semibold hover:scale-[103%] hover:shadow-2xl transition-all duration-200 shadow-[#00F5A0]">
                         <IoDocumentTextOutline></IoDocumentTextOutline>
                         <span>Resume</span>
                     </a>
