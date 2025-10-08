@@ -1,27 +1,26 @@
 "use client"
 import Tilt from 'react-parallax-tilt';
-import { projects } from '@/libs/data';
 import Image from 'next/image';
 import { VscGithubAlt } from "react-icons/vsc";
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
+import projects from '@/libs/projects';
+import Heading from '@/shared/Heading';
 
 const Projects = () => {
     return (
-        <div id="projects" className='md:mx-14 mx-3'>
-            <div className="flex justify-center">
-                <h2 className='text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600'>My Projects</h2>
-            </div>
-            <div className='grid md:grid-cols-3 sm:grid-cols-2 gap-5'>
+        <div id="projects" className='md:mx-7 mx-0'>
+            <Heading title={"my projects"}></Heading>
+            <div className='grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 md:gap-4 gap-3'>
                 {
                     projects.map(project =>
                         <Tilt key={project?.id}
-                            className="background-stripes rounded-xl p-5 bg-white/10 border border-white/30 parallax-effect-glare-scale"
+                            className="background-stripes rounded-xl p-2 bg-white/10 border border-white/30 parallax-effect-glare-scale"
                             perspective={1000}
                             glareEnable={true}
                             glareMaxOpacity={0.45}
                             scale={1.01}>
                             <div className="inner-element flex flex-col h-full justify-between">
-                              <Image className='w-full h-[220px] rounded-xl' width={100} height={100} src={project?.image} alt={project?.projectName}></Image>
+                              <Image className='w-full md:h-[200px] h-[250px] rounded-xl' width={100} height={100} src={project?.image} alt={project?.projectName}></Image>
                               <h2 className='text-2xl font-medium text-[#F8F8F8] capitalize'>{project?.projectName}</h2>
                               <p className='text-[#A3B3C2] text-sm mb-1'>{project?.details}</p>
                               <p className='flex justify-center gap-2 items-center flex-wrap'>{project?.features.map(item =>

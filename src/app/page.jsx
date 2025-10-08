@@ -12,8 +12,9 @@ import Stats from '@/components/Stats';
 
 const MainPage = () => {
   return (
-    <div className='space-y-20'>
+  <div>
       <Navbar></Navbar>
+    <div className='space-y-10 md:space-y-16 lg:space-y-20'>
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
@@ -25,6 +26,7 @@ const MainPage = () => {
       <Contact></Contact>
       <Footer></Footer>
     </div>
+  </div>
   );
 };
 

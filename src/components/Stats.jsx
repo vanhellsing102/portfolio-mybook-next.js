@@ -1,12 +1,11 @@
+import Heading from '@/shared/Heading';
 import React from 'react';
 
 const Stats = () => {
     return (
-        <div id='stats' className='md:mx-12 '>
-            <div className="flex justify-center items-center">
-                <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">GitHub Statistics</h2>
-            </div>
-            <div className='flex items-center justify-between gap-5 flex-col md:flex-row'>
+        <div id='stats' className='md:px-20'>
+            <Heading title={"GitHub Statistics"}></Heading>
+            <div className='flex items-center justify-center gap-5 flex-col md:flex-row'>
                 <img
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=vanhellsing102&layout=compact&theme=tokyonight"
                     alt="Top Languages"

@@ -1,33 +1,30 @@
-"use client"
-import { heroData } from "@/libs/data";
+"use client";
 import "../styles/Hero.css";
 import { Typewriter } from 'react-simple-typewriter';
-import {motion} from "framer-motion";
-import { IoMdArrowDown } from "react-icons/io";
 import { IoCallOutline, IoDocumentTextOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareInstagram, FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
 import hero from "../../public/images/murad.jpg";
 import Image from "next/image";
 import earth from "../../public/images/earth (1).png";
 import moon from "../../public/images/moon.png";
+import heroData from "@/libs/hero";
+import SocialLink from "@/shared/SocialLink";
 
 const Hero = () => {
     
     return (
-        <div id="home" className='flex justify-center md:overflow-hidden md:flex-row flex-col items-center md:min-h-screen h-full md:gap-5 gap-20'>
+        <div id="home" className='flex justify-center md:overflow-hidden md:flex-row flex-col items-center md:min-h-screen h-full md:gap-5 gap-28 md:py-[120px]'>
             {/* describe section */}
             <div className='md:w-1/2 flex items-center flex-col'>
                 <p className="text-xl border border-slate-300/10 bg-white/10 px-2 rounded-lg text-slate-200">Hi, there</p>
-                <h2 className="text-[#F8F8F8] md:text-[58px] text-5xl font-semibold">I'm <span className="capitalize bg-clip-text text-transparent nameColor">{heroData?.name}!</span></h2>
-                <h3 className="text-4xl font-semibold">
+                <h2 className="text-[#F8F8F8] text-4xl md:text-5xl lg:text-6xl font-semibold">I'm <span className="capitalize bg-clip-text text-transparent nameColor">{heroData?.name}!</span></h2>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
                     <span className="text-slate-300">I'm a</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-fuchsia-500 to-red-600">
                         <Typewriter words={['MERN-Stack Developer', "CSE Student", 'Learner', 'Traveller', 'Marketing Expert', 'Review Provider']} loop={true} cursor cursorStyle='_' typeSpeed={100} deleteSpeed={50} delaySpeed={1000}/>
                     </span>
                 </h3>
-                <div className="flex flex-col gap-1 mt-3">
+                <div className="flex flex-col gap-1 md:gap-2 mt-3">
                     <div className="flex items-center gap-3 text-[20px] border border-slate-300/10 bg-white/10 px-3 rounded-lg cursor-auto hover:scale-[103%] transition-all duration-200">
                         <IoCallOutline className="text-[#00F5A0]"></IoCallOutline>
                         <span className="text-slate-200">{heroData?.mobile}</span>
@@ -51,23 +48,7 @@ const Hero = () => {
                         <span>Contact Me</span>
                     </a>
                 </div>
-                <div className="flex items-center gap-2 mt-3 text-2xl text-slate-200">
-                    <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.facebook} target="_blank">
-                        <FaFacebookSquare className="hover:text-blue-600 duration-200 transition-all"></FaFacebookSquare>
-                    </a>
-                    <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.linkedIn} target="_blank">
-                        <FaLinkedin className="hover:text-blue-600 duration-200 transition-all"></FaLinkedin>
-                    </a>
-                    <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.github} target="_blank">
-                        <FaSquareGithub className="hover:text-slate-900 duration-200 transition-all"></FaSquareGithub>
-                    </a>
-                    <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.twitter} target="_blank">
-                        <FaSquareXTwitter className="hover:text-blue-600 duration-200 transition-all"></FaSquareXTwitter>
-                    </a>
-                    <a className="border border-[#00F5A0] p-1 rounded-full hover:bg-[#00F5A0] hover:border-slate-200 duration-200 transition-all" href={heroData?.socialLinks?.instagram} target="_blank">
-                        <FaSquareInstagram className="hover:text-fuchsia-600 duration-200 transition-all"></FaSquareInstagram>
-                    </a>
-                </div>
+                <SocialLink></SocialLink>
                 {/* <motion.div 
                     animate={{x: 0, y: [0, -20, 0] }}
                     transition={{ repeat: Infinity, repeatType: "loop", duration: 0.5, ease: "easeInOut",}}>
@@ -76,7 +57,7 @@ const Hero = () => {
             </div>
 
             {/* image section with solar system */}
-            <div className='md:w-1/2 flex items-center justify-center rounded-full'>
+            <div className='md:w-1/2 w-full flex items-center justify-center rounded-full md:mb-0 mb-16'>
                 <div className="relative">
                     <Image className="md:h-[250px] md:w-[250px] h-[100px] w-[100px] border-4 border-[#FF4500] shadow-[0_10px_40px_rgba(255,69,0,1),0_-10px_40px_rgba(255,69,0,1)] rounded-full z-0" src={hero} alt="" />
                     <div className="mercury border-2 border-slate-500 rounded-full absolute -inset-4 md:-inset-8">

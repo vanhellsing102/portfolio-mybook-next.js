@@ -1,13 +1,11 @@
-import { experience } from "@/libs/data";
+import experience from "@/libs/experience";
+import Heading from "@/shared/Heading";
+
 
 const Experience = () => {
   return (
-    <div id="experience" className='md:mx-14'>
-      <div className="flex justify-center ">
-        <h2 className="text-5xl font-semibold mb-5 inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-500 to-red-600">
-          Experience
-        </h2>
-      </div>
+    <div id="experience" className='md:mx-10'>
+      <Heading title={'Experience'}></Heading>
       <div className="">
         {
             experience.map((item, index) =>
@@ -16,7 +14,7 @@ const Experience = () => {
                       <div className="status status-lg status-secondary animate-ping"></div>
                       <div className="status status-lg status-success"></div>
                     </div>
-                    <p className="text-slate-300">{item}</p>
+                    <p className="text-slate-300 text-sm md:text-[15px] lg:text-[16px]">{item}</p>
                 </div>
             )
         }

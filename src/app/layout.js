@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-radial from-[#4e44b1] via-[#312c64] to-[#1c1c31] relative md:pt-5 md:px-10 px-7 pt-4`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-radial from-[#4e44b1] via-[#312c64] to-[#1c1c31] relative md:pt-5 md:px-10 px-2 pt-4`}
       >
           <div className="blob absolute bg-radial md:w-[400px] md:h-[500px] w-[150px] h-[150px] from-[#9252ca] via-[#4a00e0] to-[#3d0a68] rounded-full top-28 left-1/3 blur-2xl mix-blend-lighten z-0">
           </div>
